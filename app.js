@@ -6,3 +6,14 @@ window.onload = () => {
     checkalidation(filename, content);
   });
 }
+
+const checkalidation = (filename, content) => {
+  if (filename && content) {
+    downloadFile(filename, content);
+    alert("Your file has been downloaded succesfully.\n Please check downloads");
+    resetFields();
+  } else {
+    alert("Please Enter Required Values");
+    return false;
+  }
+};
