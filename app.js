@@ -18,7 +18,7 @@ const checkalidation = (filename, content) => {
   }
 };
 
-function downloadFile(filename, content) {
+const downloadFile = (filename, content) => {
   const element = document.createElement("a");
   const blob = new Blob([content], { type: "text/plain" });
   const fileUrl = URL.createObjectURL(blob);
