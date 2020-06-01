@@ -29,3 +29,8 @@ const downloadFile = (filename, content) => {
   element.click();
   document.body.removeChild(element);
 }
+
+const resetFields = () => {
+  document.getElementById("name").value = "";
+  document.getElementById("text").value = "";
+};
