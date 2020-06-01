@@ -5,12 +5,14 @@ window.onload = () => {
     const filename = `${name}.txt`;
     checkalidation(filename, content);
   });
-}
+};
 
 const checkalidation = (filename, content) => {
   if (filename && content) {
     downloadFile(filename, content);
-    alert("Your file has been downloaded succesfully.\n Please check downloads");
+    alert(
+      "Your file has been downloaded succesfully.\n Please check downloads"
+    );
     resetFields();
   } else {
     alert("Please Enter Required Values");
@@ -28,7 +30,7 @@ const downloadFile = (filename, content) => {
   document.body.appendChild(element);
   element.click();
   document.body.removeChild(element);
-}
+};
 
 const resetFields = () => {
   document.getElementById("name").value = "";
